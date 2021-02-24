@@ -7,11 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="Button-container">
+    <div class="Button-Container">
         <button id="B1">Rock</button>
         <button id="B2">Paper</button>
         <button id="B3">Scissors</button>
     </div>   
+
+    <div class="Outcome-Player">
+        <h1>You:</h1>
+        <img class="img-R"src="images/rock.png" alt="404 ERROR">
+        <img class="img-P"src="images/paper.png" alt="404 ERROR">
+        <img class="img-S"src="images/scissors.png" alt="404 ERROR">
+    </div>
+
+    <div class="Outcome-Enemy">
+        <h1>Enemy:</h1>
+        <img class="img-R"src="images/rock.png" alt="404 ERROR">
+        <img class="img-P"src="images/paper.png" alt="404 ERROR">
+        <img class="img-S"src="images/scissors.png" alt="404 ERROR">
+    </div>
 </body>
 </html>
 
@@ -22,18 +36,41 @@
     html, body{
         height: 100%;
         width: 100%;
-        overflow: hidden;
+        overflow: hidden;      
     }
     body{
         background: grey;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: roboto;
+    }
+    
+    .Button-Container{
+        margin-top: 200px;
     }
     button{
         height: 100px;
         width: 200px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        position: absolute;
     }
 
+    .Outcome-Player{
+        position: absolute;
+        left:30%;
+        top:20%;
+    }
+
+    .Outcome-Enemy{
+        position: absolute;
+        right:30%;
+        top:20%;
+    }
     
 </style>
