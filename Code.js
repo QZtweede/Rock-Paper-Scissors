@@ -2,6 +2,8 @@ let Button1 = document.getElementById("B1").addEventListener("click", B1Clicked)
 let Button2 = document.getElementById("B2").addEventListener("click", B2Clicked)
 let Button3 = document.getElementById("B3").addEventListener("click", B3Clicked)
 
+let OutcomeTxt = document.getElementById("Result-Txt")
+
 let Rock1 = document.getElementById("img-R-1")
 let Rock2 = document.getElementById("img-R-2")
 let Paper1 = document.getElementById("img-P-1")
@@ -75,35 +77,42 @@ function Outcome(){
     if(Input === botOutput){
         Result = "Tie";
         console.log("Result = " + Result)
+        OutcomeTxt.textContent = "You Tied"
     }
 
     if(Input === 0 && botOutput === 1){
         Result = "Lost"
         console.log("Result = " + Result)
+        OutcomeTxt.textContent = "You Lost"
     }
 
     if(Input === 0 && botOutput === 2){
         Result = "Won"
         console.log("Result = " + Result)
+        OutcomeTxt.textContent = "You Won"
     }
 
     if(Input === 1 && botOutput === 0){
         Result = "Won"
         console.log("Result = " + Result)
+        OutcomeTxt.textContent = "You Won"
     }
 
     if(Input === 1 && botOutput === 2){
         Result = "Lost"
         console.log("Result = " + Result)
+        OutcomeTxt.textContent = "You Lost"
     }
 
     if(Input === 2 && botOutput === 0){
         Result = "Lost"
         console.log("Result = " + Result)
+        OutcomeTxt.textContent = "You Lost"
     }
 
     if(Input === 2 && botOutput === 1){
         Result = "Won"
         console.log("Result = " + Result)
+        OutcomeTxt.textContent = "You Won"
     }
 }
