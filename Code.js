@@ -43,10 +43,8 @@ function B3Clicked(){
 
 
 function RandomInputEnemy(){
-    Reset()
     botOutput = Math.floor(Math.random() * 3)
     console.log(botOutput)
-    Outcome()
 
     if(botOutput === 0)
     {
@@ -65,12 +63,13 @@ function RandomInputEnemy(){
 }
 
 function Reset(){
-Rock1.style.opacity = 0
-Paper1.style.opacity = 0
-Scissors1.style.opacity = 0
-Rock2.style.opacity = 0
-Paper2.style.opacity = 0
-Scissors2.style.opacity = 0
+    Rock1.style.opacity = 0
+    Paper1.style.opacity = 0
+    Scissors1.style.opacity = 0
+    Rock2.style.opacity = 0
+    Paper2.style.opacity = 0
+    Scissors2.style.opacity = 0
+    Outcome()
 }
 
 function Outcome(){
