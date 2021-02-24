@@ -2,6 +2,13 @@ let Button1 = document.getElementById("B1").addEventListener("click", B1Clicked)
 let Button2 = document.getElementById("B2").addEventListener("click", B2Clicked)
 let Button3 = document.getElementById("B3").addEventListener("click", B3Clicked)
 
+let Rock1 = document.getElementById("img-R-1")
+let Rock2 = document.getElementById("img-R-2")
+let Paper1 = document.getElementById("img-P-1")
+let Paper2 = document.getElementById("img-P-2")
+let Scissors1 = document.getElementById("img-S-1")
+let Scissors2 = document.getElementById("img-S-2")
+
 let Input
 let botOutput
 let Result
@@ -10,24 +17,42 @@ function B1Clicked(){
     Input = 0
     console.log(Input)
     RandomInputEnemy()
+    Rock1.style.opacity = 100
 }
 
 function B2Clicked(){
     Input = 1
     console.log(Input)
     RandomInputEnemy()
+    Paper1.style.opacity = 100
 }
 
 function B3Clicked(){
     Input = 2
     console.log(Input)
     RandomInputEnemy()
+    Scissors1.style.opacity = 100
 }
 
 function RandomInputEnemy(){
     botOutput = Math.floor(Math.random() * 3)
     console.log(botOutput)
     Outcome()
+
+    if(botOutput === 0)
+    {
+        Rock2.style.opacity = 100
+    }
+
+    if(botOutput === 1)
+    {
+        Paper2.style.opacity = 100
+    }
+
+    if(botOutput === 2)
+    {
+        Scissors2.style.opacity = 100
+    }
 }
 
 function Outcome(){
