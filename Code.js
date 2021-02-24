@@ -36,11 +36,19 @@ function Outcome(){
         console.log("Result = " + Result)
     }
    
-    if(Input + 1 === botOutput){
+    else if(Input + 1 === botOutput){
         if(Input === 3){
         Input = 0
         }
         Result = "Lost"
+        console.log("Result = " + Result)
+    }
+
+    else if(Input - 1 === botOutput){
+        if(Input === 0){
+        Input = 2
+        }
+        Result = "Won"
         console.log("Result = " + Result)
     }
 }
