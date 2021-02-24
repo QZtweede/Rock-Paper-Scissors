@@ -13,7 +13,10 @@ let Input
 let botOutput
 let Result
 
+
+
 function B1Clicked(){
+    Reset()
     Input = 0
     console.log(Input)
     RandomInputEnemy()
@@ -21,20 +24,24 @@ function B1Clicked(){
 }
 
 function B2Clicked(){
+    Reset()
     Input = 1
     console.log(Input)
     RandomInputEnemy()
     Paper1.style.opacity = 100
 }
 
-function B3Clicked(){
+function B3Clicked(){  
+    Reset()
     Input = 2
     console.log(Input)
     RandomInputEnemy()
     Scissors1.style.opacity = 100
 }
 
+
 function RandomInputEnemy(){
+    Reset()
     botOutput = Math.floor(Math.random() * 3)
     console.log(botOutput)
     Outcome()
@@ -53,6 +60,15 @@ function RandomInputEnemy(){
     {
         Scissors2.style.opacity = 100
     }
+}
+
+function Reset(){
+Rock1.style.opacity = 0
+Paper1.style.opacity = 0
+Scissors1.style.opacity = 0
+Rock2.style.opacity = 0
+Paper2.style.opacity = 0
+Scissors2.style.opacity = 0
 }
 
 function Outcome(){
