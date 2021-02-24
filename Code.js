@@ -7,14 +7,21 @@ let Input
 function B1Clicked(){
     Input = 1
     console.log(Input)
+    RandomInputEnemy
 }
 
 function B2Clicked(){
     Input = 2
     console.log(Input)
+    RandomInputEnemy
 }
 
 function B3Clicked(){
     Input = 3
     console.log(Input)
+    RandomInputEnemy
+}
+
+function RandomInputEnemy(){
+    console.log("test")
 }
