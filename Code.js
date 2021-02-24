@@ -51,7 +51,7 @@ function Outcome(){
         console.log("Result = " + Result)
     }
 
-    if(Input === 2 && botOutput === 1){
+    if(Input === 1 && botOutput === 2){
         Result = "Lost"
         console.log("Result = " + Result)
     }
