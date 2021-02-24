@@ -8,7 +8,7 @@ let Result
 
 function B1Clicked(){
     Input = 0
-    console.log()
+    console.log(Input)
     RandomInputEnemy()
 }
 
@@ -35,19 +35,33 @@ function Outcome(){
         Result = "Tie";
         console.log("Result = " + Result)
     }
-   
-    else if(Input + 1 === botOutput){
-        if(Input === 3){
-        Input = 0
-        }
+
+    if(Input === 0 && botOutput === 1){
         Result = "Lost"
         console.log("Result = " + Result)
     }
 
-    else if(Input - 1 === botOutput){
-        if(Input === 0){
-        Input = 2
-        }
+    if(Input === 0 && botOutput === 2){
+        Result = "Won"
+        console.log("Result = " + Result)
+    }
+
+    if(Input === 1 && botOutput === 0){
+        Result = "Won"
+        console.log("Result = " + Result)
+    }
+
+    if(Input === 2 && botOutput === 1){
+        Result = "Lost"
+        console.log("Result = " + Result)
+    }
+
+    if(Input === 2 && botOutput === 0){
+        Result = "Lost"
+        console.log("Result = " + Result)
+    }
+
+    if(Input === 2 && botOutput === 1){
         Result = "Won"
         console.log("Result = " + Result)
     }
