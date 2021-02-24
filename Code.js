@@ -60,6 +60,7 @@ function RandomInputEnemy(){
     {
         Scissors2.style.opacity = 100
     }
+    Outcome()
 }
 
 function Reset(){
@@ -68,8 +69,7 @@ function Reset(){
     Scissors1.style.opacity = 0
     Rock2.style.opacity = 0
     Paper2.style.opacity = 0
-    Scissors2.style.opacity = 0
-    Outcome()
+    Scissors2.style.opacity = 0   
 }
 
 function Outcome(){
