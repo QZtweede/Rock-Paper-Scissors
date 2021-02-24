@@ -5,23 +5,24 @@ let Button3 = document.getElementById("B3").addEventListener("click", B3Clicked)
 let Input
 
 function B1Clicked(){
-    Input = 1
+    Input = 0
     console.log(Input)
-    RandomInputEnemy
+    RandomInputEnemy()
 }
 
 function B2Clicked(){
-    Input = 2
+    Input = 1
     console.log(Input)
-    RandomInputEnemy
+    RandomInputEnemy()
 }
 
 function B3Clicked(){
-    Input = 3
+    Input = 2
     console.log(Input)
-    RandomInputEnemy
+    RandomInputEnemy()
 }
 
 function RandomInputEnemy(){
-    console.log("test")
+    botOutput = Math.floor(Math.random() * 3)
+    console.log(botOutput)
 }
